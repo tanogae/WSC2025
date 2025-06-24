@@ -1,12 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <Compile Remove="Contributors\Bad\BadContributorComand.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Ardalis.Result" />
     <PackageReference Include="MediatR" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Clean.Architecture.Core\Clean.Architecture.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Contributors\Bad\" />
   </ItemGroup>
 
 </Project>

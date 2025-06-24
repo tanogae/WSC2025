@@ -1,5 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <Sdk Name="Microsoft.Build.CentralPackageVersions" Version="2.1.3" />
+  <ItemGroup>
+    <Compile Remove="ContributorAggregate\Commands\BadContributorComand.cs" />
+    <Compile Remove="ContributorAggregate\Contributor_PublicDefaultContructor.cs" />
+    <Compile Remove="ContributorAggregate\Events\ContributorUpdated.cs" />
+    <Compile Remove="ContributorAggregate\PhoneNumber_NotSealed.cs" />
+    <Compile Remove="ContributorAggregate\PhoneNumber_PublicSet.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Ardalis.GuardClauses" />
@@ -9,6 +16,10 @@
     <PackageReference Include="Ardalis.Specification" />
     <PackageReference Include="MediatR" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ContributorAggregate\Commands\" />
   </ItemGroup>
 
 </Project>

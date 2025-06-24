@@ -9,6 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Contributors\Delete.cs" />
+    <Compile Remove="Contributors\Delete.DeleteContributorRequest.cs" />
+    <Compile Remove="Contributors\Delete.DeleteContributorValidator.cs" />
+    <Compile Remove="Contributors\GetById.cs" />
+    <Compile Remove="Contributors\GetById.GetContributorByIdRequest.cs" />
+    <Compile Remove="Contributors\GetById.GetContributorValidator.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Ardalis.ListStartupServices" />
     <PackageReference Include="Ardalis.Result" />
     <PackageReference Include="Ardalis.Result.AspNetCore" />
