@@ -2,7 +2,6 @@
 using Clean.Architecture.Core.ContributorAggregate.Events;
 using Clean.Architecture.Core.Interfaces;
 
-
 namespace Clean.Architecture.Core.Services;
 
 /// <summary>
