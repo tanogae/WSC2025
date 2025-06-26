@@ -42,7 +42,7 @@ public class ValueObjectTests
                              .That()
                              .Inherit(typeof(ValueObject))
                              .Should()
-                             .MeetCustomRule(new PropertiesSetShouldBeNonPublicRule())
+                             .MeetCustomRule(new PropertiesSetShouldNotBePublicRule())
                              .GetResult();
 
     // Assert
