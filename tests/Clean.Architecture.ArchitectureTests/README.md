@@ -25,3 +25,8 @@
   * Comandi solo nel progetto UseCase
   * Comando deve seguire naming convention
   * Comando deve essere un record
+
+7. WebTests
+
+  * Ogni Request deve avere una Response 
+  * Ongi Request deve evere un Validator
